@@ -1,6 +1,3 @@
-lis=[2,8,9,5,10,14]
-min=lis[0]
-for i in lis:
-    if i<min:
-        min=i
-print("minimum element=",min)
+n=int(input("enter n value:"))
+for i in range(1,10):
+    print(n<<i)
