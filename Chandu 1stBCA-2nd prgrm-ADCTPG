@@ -1,3 +1,5 @@
-n=int(input("enter n value:"))
-for i in range(1,10):
-    print(n<<i)
+s=int(input("enter a num :"))
+if s<100:
+    print("Less than 100")
+else:
+    print("greater than 100")
