@@ -1,5 +1,23 @@
-s=int(input("enter ur pin :"))
-if s<10000:
-    print("continue the transaction ")
+ph=int(input("enter ur phnno :"))
+nam=input("enter ur name. :")
+t=int(input("how much almonds u want :"))
+o=int(input("how much kaju u want :"))
+b=int(input("how much badam  u want :"))
+n=int(input("how much nuts  u want :"))
+p=int(input("how much pista u want :"))
+bi=(1200*t)+(420*o)+( 896*b)+(1365*n)+(986*p)
+if bi>3000:
+    tax=bi*5/100
+elif bi>200:
+    tax=bi*7/100
+elif bi>1000:
+    tax=bi*10/100
+elif bi>500:
+    tax=bi*15/100
 else:
-    print("incorrect the pin number\nplease try again ")
+    tax=100;
+print("\n\ncustomer phno ="  ,ph)
+print("customer name =",nam)
+print("amont =",bi)
+print("tax=",tax)
+print("bill =",tax+bi)
