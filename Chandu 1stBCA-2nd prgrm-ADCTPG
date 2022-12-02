@@ -1,9 +1,9 @@
-
-n=int(input(""))
-if n%2==0:
-    if n>1and n<6 or n>20:
-        print ("Not Wired")
+def leap(y):
+    if y%4==0 and y%100!=0:
+        return "Yes"
+    elif y%400==0:
+        return "Yes"
     else:
-        print("Wired")
-else:
-    print("Wired")
+        return "No"
+year=int(input ("enter year:" ))
+print(leap(year))
