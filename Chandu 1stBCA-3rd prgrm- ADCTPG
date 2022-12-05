@@ -1,9 +1,8 @@
-def leap(y):
-    if y%4==0 and y%100!=0:
-        return "Yes"
-    elif y%400==0:
-        return "Yes"
-    else:
-        return "No"
-year=int(input ("enter year:" ))
-print(leap(year))
+n=int(input("enter a num :"))
+s=0
+k=n
+ k>0:
+    r=k%10
+    s=s+r
+    k=k//10
+print("the sum  of {0} = {1}".format(n,s))
