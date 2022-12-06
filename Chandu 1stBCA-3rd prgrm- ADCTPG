@@ -1,8 +1,12 @@
-n=int(input("enter a num :"))
+i=int(input("enter a num :"))
 s=0
-k=n
- k>0:
-    r=k%10
-    s=s+r
-    k=k//10
-print("the sum  of {0} = {1}".format(n,s))
+n=i
+while n>0:
+    r=n%10
+    s=s+(r*r*r)
+    n=n//10
+if s==i:
+    print("Armstrong")
+else:
+    
+    print("not Armstrong")
