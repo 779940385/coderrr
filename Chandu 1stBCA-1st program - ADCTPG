@@ -1,13 +1,7 @@
 n=int(input("enter a num :"))
-b=1
-print("the prime number 1 to ",n)
-while n>=b:
-    f=0
-    c=1
-    while c<=b:
-        if b%c==0:
-            f=f+1
-        c=c+1
-    if f==2:
-        print(b)
-    b=b+1
+s=0
+while n>0:
+    r=n%10
+    s=s*10+r
+    n=n//10
+print(s)
