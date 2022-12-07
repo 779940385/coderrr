@@ -1,7 +1,9 @@
-n=int(input("enter a num :"))
-s=0
-while n>0:
-    r=n%10
-    s=s*10+r
-    n=n//10
-print(s)
+n=int(input("enter"))
+f1=0
+f2=1
+f3=0
+while f3<n:
+    print(f3)
+    f3=f1+f2
+    f2=f1
+    f1=f3
