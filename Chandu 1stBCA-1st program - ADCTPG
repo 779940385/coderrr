@@ -1,27 +1,28 @@
-from tkinter import *
-x=Tk()
-x.title("AStudent application")
-Label(x,text="student ID").grid(row=0)
-Label(x,text="student name ").grid(row=1)
-Label(x,text="father name").grid(row=2)
-Label(x,text="Groupp").grid(row=3)
-Label(x,text="phone number").grid(row=4)
-Label(x,text="e-mail ID").grid(row=5)
-Label(x,text="Address").grid(row=6)
-l=Entry(x)
-b=Entry(x)
-c=Entry(x)
-d=Entry(x)
-e=Entry(x)
-f=Entry(x)
-g=Entry(x)
-l.grid(row=0,column=1)
-b.grid(row=1,column=1)
-c.grid(row=2,column=1)
-d.grid(row=3,column=1)
-e.grid(row=4,column=1)
-f.grid(row=5,column=1)
-g.grid(row=6,column=1)
-Button(x,text="submit").grid(row=7)
-Button(x,text="cancel").grid(row=7,column=1)
-mainloop()
+n=int(input())
+x=input()
+j=0
+i,l=0,1
+k=[]
+while n>0:
+    f=0
+    while x[i]!=' ':
+        if x[i]=='-':
+            l=-1
+            i=i+1
+            continue
+        f=((f*10)+int(x[i]))
+        i=i+1
+        f=f*l
+        l=1
+        if i==len(x):
+            break
+    k.append(f)
+    n=n-1
+    i=i+1
+k.sort(reverse=True)
+for i in k:
+    if i<max(k):
+        print(i)
+        break
+
+
