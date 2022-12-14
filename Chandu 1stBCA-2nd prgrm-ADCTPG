@@ -1,8 +1,13 @@
 n=int(input())
-k=[]
+l=[]
 for i in range(0,n):
-    j=int(input(""))
-    k.append(j)
-print(k)
-print(min(k))
-print(max(k))
+    j=int(input())
+    l.append(j)
+for i in range(0,n):
+    for j in range(0,n):
+        b=l[i]
+        s=l[j]
+        if l[i]>l[j]:
+            l[i]=s
+            l[j]=b
+print(l)
