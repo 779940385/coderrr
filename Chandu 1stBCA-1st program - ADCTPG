@@ -1,28 +1,13 @@
 n=int(input())
-x=input()
-j=0
-i,l=0,1
-k=[]
-while n>0:
-    f=0
-    while x[i]!=' ':
-        if x[i]=='-':
-            l=-1
-            i=i+1
-            continue
-        f=((f*10)+int(x[i]))
-        i=i+1
-        f=f*l
-        l=1
-        if i==len(x):
-            break
-    k.append(f)
-    n=n-1
-    i=i+1
-k.sort(reverse=True)
-for i in k:
-    if i<max(k):
-        print(i)
-        break
-
-
+l=[]
+for i in range(0,n):
+    j=int(input())
+    l.append(j)
+b=l[0]
+s=l[0]
+for i in l:
+    if i<s:
+        s=i
+    if i>b:
+        b=i
+print("big=",b,"","small=",s)
