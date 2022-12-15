@@ -1,13 +1,13 @@
-n=int(input())
-l=[]
-for i in range(0,n):
-    j=int(input())
-    l.append(j)
-for i in range(0,n):
-    for j in range(0,n):
-        b=l[i]
-        s=l[j]
-        if l[i]>l[j]:
-            l[i]=s
-            l[j]=b
-print(l)
+n=int(input("enter how many numbers:"))
+x=input()
+l=list(map(int,x.split()))
+el=[]
+ol=[]
+for i in l:
+    if i%2==0:
+        el.append(i)
+    else:
+        ol.append(i)
+s=el+ol
+for j in s:
+    print(j,end=" ")
