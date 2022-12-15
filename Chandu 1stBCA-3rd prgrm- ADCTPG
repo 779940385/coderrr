@@ -1,18 +1,14 @@
-n=int(input())
-l=[]
+n=int(input("enter how many numbers:"))
+x=input()
+t=int(input("enter target value:"))
+l=list(map(int,x.split()))
+c=0
 for i in range(0,n):
-    j=int(input())
-    l.append(j)
-f=0
-for i in range(0,n):
-    for j in range(0,n):
-        if i==j:
-            continue
-        if l[i]==l[j]:
-            print("YES")
-            f=f+1
+    for j in range(i+1,n):
+        if l[i]-l[j]==t:
+            c+=1
             break
-    if f!=0:
-        break
-if f==0:
-    print("NO")
+if c>0:
+    print("YES")
+else:
+    print("NO")
