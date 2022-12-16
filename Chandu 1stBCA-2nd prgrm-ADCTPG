@@ -1,13 +1,6 @@
-n=int(input("enter how many numbers:"))
-x=input()
-l=list(map(int,x.split()))
-el=[]
-ol=[]
-for i in l:
-    if i%2==0:
-        el.append(i)
-    else:
-        ol.append(i)
-s=el+ol
-for j in s:
-    print(j,end=" ")
+n=input ("enter string:")
+c=0
+for i in n:
+    if i.isalpha()==1:
+        c+=1
+print("no of alphabets=",c)
