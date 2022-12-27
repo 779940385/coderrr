@@ -1,7 +1,12 @@
-y=int(input("enter any year"))
-if y%4==0 and y%100!=0:
-    print("leap year")
-elif y%400==0:
-    print("leap year")
-else:
-    print("not leap year")
+n=int(input("enter how many numbers:"))
+l=list(map(int,input().split()))
+s=int(input("enter searching element:"))
+f=0
+j=0
+for i in l:
+    if i==s:
+        f+=1
+        print(s,"is found at",j,"location")
+    j+=1
+if f==0:
+    print(-1)
