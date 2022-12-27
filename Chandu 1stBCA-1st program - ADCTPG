@@ -1,11 +1,11 @@
-n=int(input("enter any number"))
-o=n
-s=0
-while n>0:
-    r=n%10
-    s=s*10+r
-    n=n//10
-if s==o:
-    print("polindrome")
+n=int(input("enter how many numbers:"))
+l=list(map(int,input().split()))
+s=int(input("enter searching element:"))
+f=0
+for i in l:
+    if i==s:
+        f+=1
+if f>0:
+    print("element found")
 else:
-    print("not plindrome")
+    print("element not found")
