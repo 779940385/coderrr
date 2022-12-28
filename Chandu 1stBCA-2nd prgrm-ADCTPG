@@ -1,12 +1,6 @@
-n=int(input("enter how many numbers:"))
-l=list(map(int,input().split()))
-s=int(input("enter searching element:"))
-f=0
-j=0
-for i in l:
-    if i==s:
-        f+=1
-        print(s,"is found at",j,"location")
-    j+=1
-if f==0:
-    print(-1)
+n=int(input("enter any number:"))
+s=str(n-1)
+l=[]
+for i in s:
+    l.append(i)
+print(l)
