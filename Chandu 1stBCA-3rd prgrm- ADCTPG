@@ -1,18 +1,20 @@
-n=int(input("enter how many numbers:"))
+n=int(input())
 l=list(map(int,input().split()))
-s=int(input("enter searching element:"))
-f=0
-low=0
-high=n-1
-while low<=high:
-    mid=(low+high)//2
-    if s<l[mid]:
-        high=mid-1
-    elif s>l[mid]:
-        low=mid+1
-    elif s==l[mid]:
-        print(s,"found at",mid,"location")
-        f+=1
-        break
-if f==0:
-    print("element not found")
+l1=[]
+l2=[]
+if len(l)%2==0:
+ for i in range(n-1,(len(l)//2)-1,-1):
+    l1.append(l[i])
+ j=0
+ for i in range((len(l)//2),n):
+   l[i]=l1[j]
+   j+=1
+if len(l)%2==1:
+ for i in range(n-1,len(l)//2,-1):
+    l1.append(l[i])
+ j=0
+ for i in range((len(l)//2)+1,n):
+   l[i]=l1[j]
+   j+=1
+
+print(l)
