@@ -1,9 +1,7 @@
-n=int(input())
-t=tuple(map(int,input().split()))
-l=list(t)
-l1=[]
-for i in l:
-    if i%2!=0:
-        l1.append(i)
-t=tuple(l1)
-print(t)
+email=input()
+if email.endswith("@gmail.com"):
+    print("you are using google account")
+elif email.endswith("@yahoo.com"):
+    print("you are using yahoo account")
+elif email.endswith("@adc.aditya.ac.in"):
+    print("you are using aditya educational institute account")
