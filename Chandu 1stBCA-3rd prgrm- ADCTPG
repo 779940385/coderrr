@@ -1,22 +1,8 @@
-r=int(input("enter row:"))
-c=int(input("entre coloumn:"))
-m=[]
-sl=0
-sr=0
-for i in range(0,r):
-    l=[]
-    for j in range(0,c):
-        n=int(input())
-        l.append(n)
-    m.append(l)
-
-for i in range(0,r):
-    for j in range(0,c):
-        print(m[i][j],end=" ")
-    print("\n")
-j=c-1
-for i in range(0,r):
-        sr=sr+m[i][j]
-        sl=sl+m[i][i]
-        j-=1
-print("dif of left diagnol and right diagnol=",sl-sr)
+n=int(input())
+l=list(map(int,input().split()))
+l.sort()
+k=int(input())
+l1=[]
+for i in range(n-k,n):
+    l1.append(l[i])
+print(max(l1)-min(l1))
