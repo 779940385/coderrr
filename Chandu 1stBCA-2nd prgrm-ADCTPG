@@ -1,18 +1,9 @@
-r=int(input("enter row:"))
-c=int(input("entre coloumn:"))
-m=[]
-s=0
-for i in range(0,r):
-    l=[]
-    for j in range(0,c):
-        n=int(input())
-        l.append(n)
-    m.append(l)
-
-for i in range(0,r):
-    for j in range(0,c):
-        print(m[i][j],end=" ")
-    print("\n")
-for i in range(0,r):
-        s=s+m[i][i]
-print("sum of left diagnol=",s)
+n=int(input())
+t=tuple(map(int,input().split()))
+l=list(t)
+l1=[]
+for i in l:
+    if i%2!=0:
+        l1.append(i)
+t=tuple(l1)
+print(t)
