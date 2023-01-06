@@ -1,8 +1,10 @@
-n=int(input())
-l=list(map(int,input().split()))
-l.sort()
-k=int(input())
-l1=[]
-for i in range(n-k,n):
-    l1.append(l[i])
-print(max(l1)-min(l1))
+email=input()
+p=input()
+c=0
+for i in p:
+    if i.isdigit():
+        c+=1
+if (email.endswith("@gmail.com") or email.endswith("@yahoo.com") or email.endswith("@adc.aditya.ac.in.com")) and c==10:
+    print("Registration successful")
+else:
+    print("Check your details")
