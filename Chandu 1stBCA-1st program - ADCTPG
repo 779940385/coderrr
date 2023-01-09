@@ -1,5 +1,15 @@
-n=int(input())
-l=list(map(int,input(). split ()))
-s=set(l)
-for i in s:
-    print(i,end=" ")
+def swap_case(s):
+    k=''
+    for i in s: 
+        if i.isupper():
+            k=k+i.lower()
+        elif i.islower():
+            k=k+i.upper()
+        else:
+            k=k+i
+    return(k)
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
