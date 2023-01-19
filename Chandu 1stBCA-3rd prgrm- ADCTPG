@@ -1,9 +1,7 @@
+s=input()
 n=int(input())
-n1=str(n)
-l=[]
-for i in n1:
-    l.append(i)
-l.sort()
-l.reverse()
-for i in l:
-    print(i,end="")
+s1=''
+for i in s:
+    for j in range(n):
+        s1=s1+i
+print(s1)
