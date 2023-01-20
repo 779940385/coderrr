@@ -1,0 +1,8 @@
+n=input()
+j=97
+for i in n:
+    if ord(i)==j:
+        j+=1
+    else:
+        print(j)
+        break
