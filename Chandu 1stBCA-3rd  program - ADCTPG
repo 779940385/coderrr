@@ -1,0 +1,5 @@
+n=input()
+k=['a','e','i','o','u']
+for i in n:
+    if i not in k:
+        print(i,end="")
