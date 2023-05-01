@@ -1,0 +1,26 @@
+s={}
+l=[]
+print("enter no of students")
+for i in range(int(input())):
+    print("student",i+1,"details")
+    print("enter sname :")
+    j=input()
+    l.append(j)
+    print("enter group :")
+    k=input()
+    l.append(k)
+    print("enter clg_branch :")
+    m=input()
+    l.append(m)
+    print("enter phno :")
+    n=int(input())
+    l.append(n)
+    s[i]=l
+    print("-----")
+    print("\n")
+print("enter student no:")
+j=int(input())
+print("sname:",s.get(j-1)[0])
+print("group :",s.get(j-1)[1])
+print("college :",s.get(j-1)[2])
+print("phno :",s.get(j-1)[3])
