@@ -1,0 +1,9 @@
+p={}
+print("enter no of players")
+for i in range(int(input())):
+    print("enter phno :")
+    j=int(input())
+    print("enter pname")
+    k=input()
+    p[j]=k
+print(p)
