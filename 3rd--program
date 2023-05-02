@@ -1,0 +1,7 @@
+l=[]
+print("enter no of ele")
+for i in range(int(input())):
+    j=int(input())
+    l.append(j)
+print("big num=",max(l))
+print("small num=",min(l))
