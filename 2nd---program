@@ -1,0 +1,16 @@
+class solution:
+    def poli(self,m):
+        r=0
+        sum=0
+        while m>0:
+         r=m%10
+         sum=(sum*10)+r
+         m=m//10
+        return sum
+n=int(input())
+p=solution()
+r=p.poli(n)
+if r==n:
+    print("polindrome")
+else:
+    print("not polindrome")
